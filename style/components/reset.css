@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1vw;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  display: block;
+}
+
+.container {
+  width: 77.875rem;
+  margin: 0 auto;
+  /*  border: 1px solid red;*/
+}
+
+/*# sourceMappingURL=reset.css.map */

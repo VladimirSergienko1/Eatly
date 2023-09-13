@@ -1,0 +1,7 @@
+.header{
+  .header__container{
+    @extend .container;
+    color: red;
+    background-color: black;
+  }
+}
