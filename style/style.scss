@@ -1,3 +1,7 @@
 @import 'components/reset';
-@import 'components/header';
+@import 'components/header/header';
+@import 'components/utilities/primary__button';
 
+html{
+  background: #F9F9F9;
+}
