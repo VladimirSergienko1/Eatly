@@ -29,7 +29,7 @@ a {
   display: block;
 }
 
-.container, .header .header__container {
+.container, .get-started .get-started__container, .header .header__container {
   width: 78rem;
   margin: 0 auto;
   /*  border: 1px solid red;*/
@@ -118,6 +118,48 @@ a {
   line-height: 1.67144rem; /* 150% */
   text-transform: capitalize;
   border: none;
+}
+
+.get-started .get-started__container .get-started__left-block {
+  margin-top: 7.44rem;
+  display: flex;
+  flex-direction: column;
+}
+.get-started .get-started__container .get-started__left-block .get-started__badge {
+  width: 9.8125rem;
+}
+.get-started .get-started__container .get-started__left-block .get-started__title {
+  width: 35.4375rem;
+}
+.get-started .get-started__container .get-started__left-block .get-started__subtitle {
+  width: 31.1875rem;
+}
+.get-started .get-started__container .get-started__left-block .get-started__buttons {
+  display: flex;
+  gap: 1.12rem;
+}
+.get-started .get-started__container .get-started__left-block .get-started__buttons .primary__button {
+  width: 9.75rem;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 1.01694rem;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.01019rem;
+}
+.get-started .get-started__container .get-started__left-block .get-started__buttons .get-started__button {
+  width: 6.875rem;
+  border-radius: 0.77575rem;
+  border: 1.5px solid #6C5FBC;
+  color: #6C5FBC;
+  font-family: Poppins;
+  font-size: 1.01694rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.01019rem;
+  text-transform: capitalize;
+  background: #F9F9F9;
 }
 
 html {
