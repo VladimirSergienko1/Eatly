@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -31,19 +32,25 @@ a {
   display: block;
 }
 
-.container, .divider-section .divider-section__container, .get-started .get-started__container, .header .header__container {
+.container, .dishes .dishes__container, .restaurants .restaurants__container, .download-app .download-app__container, .divider-section .divider-section__container, .get-started .get-started__container, .header .header__container {
   width: 78rem;
   margin: 0 auto;
   /*  border: 1px solid red;*/
 }
 
+.header {
+  padding-top: 1.5rem; /*was 3rem*/
+  background: #F9F9F9;
+  /* position: sticky;
+   top: 0;
+   z-index: 100;*/
+}
 .header .header__container {
   display: flex;
-  margin-top: 3rem;
   color: red;
   background: #F9F9F9;
   justify-content: space-between;
-  padding: 0.56rem 0 1.58rem 0;
+  padding: 0rem 0 1.58rem 0;
   gap: 6.44rem;
   border-bottom: 2px solid #CBCBCB;
 }
@@ -130,6 +137,10 @@ a {
   font-weight: 600;
   line-height: 120%;
   letter-spacing: -0.1875rem;
+}
+
+.purple {
+  color: #6C5FBC;
 }
 
 .get-started .get-started__container {
@@ -265,20 +276,24 @@ a {
   width: 90rem;
   background: #5C4EAE;
   /*padding-top: 5.31rem;*/
-  margin-top: 5.31rem;
+  margin: 5.31rem auto 0 auto;
 }
 .divider-section .divider-section__container {
+  display: flex;
   padding: 3.56rem 15.56rem;
   position: relative;
+  justify-content: center;
 }
 .divider-section .divider-section__container .divider-section__list {
   list-style: none;
   display: flex;
-  align-items: center;
+  /*  align-items: center;*/
 }
 .divider-section .divider-section__container .divider-section__list .divider-section__item {
   display: flex;
-  width: 20.68375rem;
+  /* width: 20.68375rem;*/
+  width: 21.68375rem; /*+1*/
+  /*     width: 329px;*/
   flex-direction: column;
   align-items: center;
   gap: 0.67rem;
@@ -316,6 +331,230 @@ a {
   width: auto;
   right: -90px;
   bottom: 0;
+}
+
+.download-app {
+  padding-top: 7.47rem;
+}
+.download-app .download-app__container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 7.5rem;
+  border-bottom: 2px solid #CBCBCB;
+}
+.download-app .download-app__container .download-app__content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.69rem;
+  margin-left: 10rem;
+}
+.download-app .download-app__container .download-app__content .download-app__title {
+  width: 34.98181rem;
+  color: #18181B;
+  font-family: Poppins;
+  font-size: 3.18269rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.63738rem; /* 114.286% */
+  text-transform: capitalize;
+  margin-bottom: 3.94rem;
+}
+.download-app .download-app__container .download-app__content .download-app__list {
+  display: flex;
+  padding-left: 1.5rem;
+  width: 34.23588rem;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-bottom: 4.12rem;
+}
+.download-app .download-app__container .download-app__content .download-app__list .download-app__list-item {
+  color: #676767;
+  font-family: Inter;
+  font-size: 1.27094rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.90638rem; /* 150% */
+}
+.download-app .download-app__container .download-app__content .download-app__button {
+  width: 11.625rem;
+  position: relative;
+  display: flex;
+  padding: 1.25rem 1.25rem 1.25rem 1.63rem;
+  align-items: flex-start;
+  border-radius: 0.91719rem;
+  background: #6C5FBC;
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.12888rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.41106rem; /* 125% */
+  text-transform: capitalize;
+  border: none;
+}
+.download-app .download-app__container .download-app__content .download-app__button:after {
+  content: url("/style/components/download-app/Vector.svg");
+  position: absolute;
+  top: 45px;
+  left: 165px;
+}
+.download-app .download-app__container .download-app__content .download-app__button svg {
+  position: absolute;
+  right: 27px;
+  top: 17px;
+}
+
+.restaurants {
+  padding-top: 6.25rem;
+}
+.restaurants .restaurants__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #CBCBCB;
+  padding-bottom: 7.5rem;
+}
+.restaurants .restaurants__container .restaurants__title {
+  color: #323142;
+  font-family: Poppins;
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.59738rem; /* 56.797% */
+}
+.restaurants .restaurants__container .restaurants__menu {
+  padding-top: 5.36rem;
+  display: flex;
+  gap: 1.9rem;
+  margin-bottom: 4.11rem;
+}
+.restaurants .restaurants__container .restaurants__menu .restaurants__item {
+  width: 24.74953rem;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .restaurants__container .restaurants__menu .restaurants__item .restaurants__item-image-container {
+  display: flex;
+  position: relative;
+}
+.restaurants .restaurants__container .restaurants__menu .restaurants__item .restaurants__item-image-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #323142;
+  opacity: 0.1;
+  border-radius: 1.87644rem 1.87644rem 0rem 0rem;
+}
+.restaurants .restaurants__container .restaurants__menu .restaurants__item .restaurants__item-image-container img {
+  border-radius: 1.87644rem 1.87644rem 0rem 0rem;
+}
+.restaurants .restaurants__container .restaurants__menu .restaurants__item .restaurants__item-content-container {
+  display: flex;
+  padding: 0.68rem 1.67rem 1.06rem 2.13rem;
+  flex-direction: column;
+  border-bottom-left-radius: 1.87644rem;
+  border-bottom-right-radius: 1.87644rem;
+  background: #FFF;
+  box-shadow: 5.94564px 71.34769px 35.67385px 0px rgba(229, 229, 229, 0.7);
+}
+.restaurants .restaurants__container .restaurants__menu .restaurants__item .restaurants__item-content-container .restaurants__item-badge .restaurants__item-badge-label {
+  padding: 0.19rem 0.54rem;
+  border-radius: 0.3375rem;
+  width: 4.11725rem;
+  font-family: Poppins;
+  font-size: 0.7985rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.restaurants .restaurants__container .restaurants__menu .restaurants__item .restaurants__item-content-container .restaurants__item-badge .restaurants__item-badge-label--healthy {
+  background: #F7EDD0;
+  color: #DAA31A;
+}
+.restaurants .restaurants__container .restaurants__menu .restaurants__item .restaurants__item-content-container .restaurants__item-badge .restaurants__item-badge-label--trending {
+  background: #F7C5BA;
+  color: #FB471D;
+}
+.restaurants .restaurants__container .restaurants__menu .restaurants__item .restaurants__item-content-container .restaurants__item-title {
+  color: #323142;
+  font-family: Poppins;
+  font-size: 1.61163rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.61894rem; /* 162.5% */
+  margin-bottom: -8px;
+}
+.restaurants .restaurants__container .restaurants__menu .restaurants__item .restaurants__item-content-container .restaurants__item-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.restaurants .restaurants__container .restaurants__menu .restaurants__item .restaurants__item-content-container .restaurants__item-footer .restaurants__item-time {
+  width: 4.53275rem;
+  color: #8E97A6;
+  font-family: Manrope;
+  font-size: 1.20875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.61163rem; /* 133.333% */
+  margin-right: 0.4rem;
+}
+.restaurants .restaurants__container .restaurants__menu .restaurants__item .restaurants__item-content-container .restaurants__item-footer .restaurants__item-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.restaurants .restaurants__container .restaurants__menu .restaurants__item .restaurants__item-content-container .restaurants__item-footer .restaurants__item-rating .restaurants__item-rating-number {
+  color: #8E97A6;
+  font-family: Manrope;
+  font-size: 1.20875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.61163rem; /* 133.333% */
+}
+.restaurants .restaurants__container .restaurants__menu .restaurants__item .restaurants__item-content-container .restaurants__item-footer .restaurants__item-rating-bookmark {
+  margin-left: 9.78rem;
+}
+.restaurants .restaurants__container .restaurants__button {
+  display: flex;
+  align-self: flex-end;
+}
+.restaurants .restaurants__container .restaurants__button .restaurants__button-title {
+  display: flex;
+  align-items: center;
+  color: #ACADB9;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.824rem; /* 225.921% */
+  letter-spacing: -0.00625rem;
+}
+.restaurants .restaurants__container .restaurants__button .restaurants__button-title svg {
+  margin-left: 0.8rem;
+}
+
+.dishes {
+  padding-top: 6.25rem;
+}
+.dishes .dishes__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #CBCBCB;
+  padding-bottom: 7.5rem;
+}
+.dishes .dishes__container .dishes__title {
+  color: #323142;
+  font-family: Poppins;
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.59738rem; /* 56.797% */
 }
 
 html {

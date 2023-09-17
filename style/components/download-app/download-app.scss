@@ -1,0 +1,82 @@
+.download-app{
+  padding-top: 7.47rem;
+  .download-app__container{
+    @extend .container;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 7.5rem;
+    border-bottom: 2px solid #CBCBCB;
+    .download-app__image{
+
+
+    }
+    .download-app__content{
+      display: flex;
+      flex-direction: column;
+      margin-top: 4.69rem;
+      margin-left: 10rem;
+      .download-app__title{
+        width: 34.98181rem;
+        color: #18181B;
+        font-family: Poppins;
+        font-size: 3.18269rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3.63738rem; /* 114.286% */
+        text-transform: capitalize;
+
+        margin-bottom: 3.94rem;
+
+
+      }
+      .download-app__list{
+        display: flex;
+        padding-left: 1.5rem;
+        width: 34.23588rem;
+        flex-direction: column;
+        gap: 1.75rem;
+        margin-bottom: 4.12rem;
+        .download-app__list-item{
+
+          color: #676767;
+          font-family: Inter;
+          font-size: 1.27094rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.90638rem; /* 150% */
+
+        }
+      }
+      .download-app__button{
+        width: 11.625rem;
+        position: relative;
+        display: flex;
+        padding: 1.25rem 1.25rem 1.25rem 1.63rem;
+        align-items: flex-start;
+        border-radius: 0.91719rem;
+        background: #6C5FBC;
+
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 1.12888rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.41106rem; /* 125% */
+        text-transform: capitalize;
+        border: none;
+        &:after{
+          content: url('/style/components/download-app/Vector.svg');
+          position: absolute;
+          top: 45px;
+          left: 165px;
+        }
+        svg{
+          position: absolute;
+          right: 27px;
+          top: 17px;
+        }
+      }
+    }
+  }
+}

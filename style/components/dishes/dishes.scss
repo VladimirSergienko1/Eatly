@@ -1,0 +1,20 @@
+.dishes {
+  padding-top: 6.25rem;
+  .dishes__container {
+    @extend .container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #CBCBCB;
+    padding-bottom: 7.5rem;
+    .dishes__title{
+      color: #323142;
+      font-family: Poppins;
+      font-size: 2.8125rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.59738rem; /* 56.797% */
+    }
+  }
+
+}
