@@ -559,6 +559,7 @@ a {
   align-items: center;
   border-bottom: 2px solid #CBCBCB;
   padding-bottom: 7.5rem;
+  border-bottom: 2px solid #CBCBCB;
 }
 .dishes .dishes__container .dishes__title {
   color: #323142;
@@ -567,6 +568,12 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 1.59738rem; /* 56.797% */
+}
+.dishes .dishes__container .dishes__menu {
+  padding-top: 4.74rem;
+  display: flex;
+  gap: 1.92rem;
+  margin-bottom: 4.08rem;
 }
 .dishes .dishes__container .dishes__menu .dishes__item {
   width: 14.03925rem;
@@ -578,17 +585,25 @@ a {
 .dishes .dishes__container .dishes__menu .dishes__item .dishes__item-image-container {
   display: flex;
   position: relative;
+  padding: 1.8rem 0.8rem 0.8rem 0.8rem;
+  /*   &:before{
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: #323142;
+       opacity: 0.1;
+       border-radius: 1.87644rem 1.87644rem 0rem 0rem;
+     }*/
 }
-.dishes .dishes__container .dishes__menu .dishes__item .dishes__item-image-container:before {
-  content: "";
+.dishes .dishes__container .dishes__menu .dishes__item .dishes__item-image-container .dishes__item-heart {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #323142;
-  opacity: 0.1;
-  border-radius: 1.87644rem 1.87644rem 0rem 0rem;
+  width: 21.952px;
+  height: 18.189px;
+  top: 15px;
+  right: 22px;
 }
 .dishes .dishes__container .dishes__menu .dishes__item .dishes__item-content-container {
   display: flex;
@@ -610,6 +625,14 @@ a {
 .dishes .dishes__container .dishes__menu .dishes__item .dishes__item-content-container .dishes__item-badge .dishes__item-badge-label--healthy {
   background: #F7EDD0;
   color: #DAA31A;
+}
+.dishes .dishes__container .dishes__menu .dishes__item .dishes__item-content-container .dishes__item-badge .dishes__item-badge-label--trending {
+  background: #F7C5BA;
+  color: #FB471D;
+}
+.dishes .dishes__container .dishes__menu .dishes__item .dishes__item-content-container .dishes__item-badge .dishes__item-badge-label--supreme {
+  background: rgba(51, 172, 100, 0.2);
+  color: #309D5B;
 }
 .dishes .dishes__container .dishes__menu .dishes__item .dishes__item-content-container .dishes__item-title {
   color: #323142;
@@ -667,6 +690,24 @@ a {
   cursor: pointer;
   width: 2.73938rem;
   height: 2.48256rem;
+}
+.dishes .dishes__container .dishes__button {
+  display: flex;
+  align-self: flex-end;
+}
+.dishes .dishes__container .dishes__button .dishes__button-title {
+  display: flex;
+  align-items: center;
+  color: #ACADB9;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.824rem; /* 225.921% */
+  letter-spacing: -0.00625rem;
+}
+.dishes .dishes__container .dishes__button .dishes__button-title svg {
+  margin-left: 0.8rem;
 }
 
 html {

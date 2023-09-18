@@ -7,6 +7,8 @@
     align-items: center;
     border-bottom: 2px solid #CBCBCB;
     padding-bottom: 7.5rem;
+    border-bottom: 2px solid #CBCBCB;
+
     .dishes__title{
       color: #323142;
       font-family: Poppins;
@@ -16,6 +18,10 @@
       line-height: 1.59738rem; /* 56.797% */
     }
     .dishes__menu{
+      padding-top: 4.74rem;
+      display: flex;
+      gap: 1.92rem;
+      margin-bottom: 4.08rem;
       .dishes__item{
         width: 14.03925rem;
         border-radius: 2.16131rem;
@@ -25,7 +31,8 @@
         .dishes__item-image-container{
           display: flex;
           position: relative;
-          &:before{
+          padding: 1.8rem 0.8rem 0.8rem 0.8rem;
+       /*   &:before{
             content: "";
             position: absolute;
             top: 0;
@@ -35,6 +42,13 @@
             background-color: #323142;
             opacity: 0.1;
             border-radius: 1.87644rem 1.87644rem 0rem 0rem;
+          }*/
+          .dishes__item-heart{
+            position: absolute;
+            width: 21.952px;
+            height: 18.189px;
+            top: 15px;
+            right: 22px;
           }
         }
         .dishes__item-content-container{
@@ -56,8 +70,14 @@
             .dishes__item-badge-label--healthy{
               background: #F7EDD0;
               color: #DAA31A;
-
-
+            }
+            .dishes__item-badge-label--trending{
+              background: #F7C5BA;
+              color: #FB471D;
+            }
+            .dishes__item-badge-label--supreme{
+              background: rgba(51, 172, 100, 0.2);
+              color: #309D5B;
 
             }
           }
@@ -123,6 +143,26 @@
               height: 2.48256rem;
             }
           }
+        }
+      }
+    }
+    .dishes__button{
+      display: flex;
+      align-self: flex-end;
+      .dishes__button-title{
+        display: flex;
+        align-items: center;
+
+        color: #ACADB9;
+        font-family: Poppins;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2.824rem; /* 225.921% */
+        letter-spacing: -0.00625rem;
+
+        svg{
+          margin-left: 0.8rem;
         }
       }
     }
