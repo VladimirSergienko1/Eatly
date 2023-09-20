@@ -134,72 +134,75 @@
         display: flex;
         flex-direction: column;
         gap: 1.37rem;
-        .expanses__item{
+        .expanses__item-wrapper{
           display: flex;
-          padding: 1.57rem;
+          flex-direction: column;
           border-radius: 1.17794rem;
           border: 1.571px solid #EDF2F7;
-
-
-
-          .expanses__item-image{
-            margin-right: 1.18rem;
-
-          }
-          .expanses__item-content{
+          .expanses__item{
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            .expanses__item-content-title{
-              color:  #1A202C;
+            padding: 1.57rem;
+            .expanses__item-image{
+              margin-right: 1.18rem;
+            }
+            .expanses__item-content{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              .expanses__item-content-title{
+                color:  #1A202C;
+                font-family: Manrope;
+                font-size: 1.17794rem;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 150%; /* 1.76694rem */
+                letter-spacing: 0.03925rem;
+
+              }
+              .expanses__item-content-discount{
+                color: #A0AEC0;
+                font-family: Manrope;
+                font-size: 0.98163rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%; /* 1.47244rem */
+                letter-spacing: 0.03925rem;
+              }
+
+            }
+            .expanses__item-price{
+              display: flex;
+              align-self: center;
+              justify-self: flex-end;
+              margin-left: auto;
+
+              color: #1A202C;
+              text-align: right;
               font-family: Manrope;
-              font-size: 1.17794rem;
+              font-size: 1.37425rem;
               font-style: normal;
               font-weight: 800;
-              line-height: 150%; /* 1.76694rem */
-              letter-spacing: 0.03925rem;
-
+              line-height: 150%; /* 2.06138rem */
+              letter-spacing: 0.01963rem;
             }
-            .expanses__item-content-discount{
-              color: #A0AEC0;
-              font-family: Manrope;
-              font-size: 0.98163rem;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 150%; /* 1.47244rem */
-              letter-spacing: 0.03925rem;
-            }
-
           }
-          .expanses__item-price{
-            display: flex;
-            align-self: center;
-            justify-self: flex-end;
-            margin-left: auto;
-
-            color: #1A202C;
-            text-align: right;
-            font-family: Manrope;
-            font-size: 1.37425rem;
-            font-style: normal;
-            font-weight: 800;
-            line-height: 150%; /* 2.06138rem */
-            letter-spacing: 0.01963rem;
-          }
-      /*    &:after{
+          .expanses__item-line{
             content: " ";
             width: 25.52206rem;
             height: 0.589rem;
             border-radius: 4.90806rem;
             opacity: 0.2;
+            align-self: center;
+            margin-bottom: 1.56rem;
+          }
+          .purple-line{
             background: #6C5FBC;
-            border: 1px solid red;
-          }*/
-
+          }
+          .orange-line{
+            background: #FBAD18;
+          }
         }
-
       }
-
     }
   }
 }

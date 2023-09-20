@@ -6,5 +6,87 @@
     display: flex;
     border-bottom: 2px solid #CBCBCB;
     padding-bottom: 11rem;
+    flex-direction: column;
+
+    .customers__title{
+      color: #323142;
+      font-family: Poppins;
+      font-size: 2.8125rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.59738rem; /* 56.797% */
+      margin-bottom: 5rem;
+      align-self: center;
+    }
+    .customers__slider{
+      display: flex;
+      gap: 2.88rem;
+      .customers__slider-item{
+          /*display: flex;*/
+        width: 33rem;
+        margin-right: 20px;
+
+        padding: 2.38rem 2.69rem;
+        border-radius: 1.57056rem;
+        border: 1.571px solid  #EDF2F7;
+        background:  #FFF;
+        box-shadow: 0 20px 30px rgba(50, 49, 66, 0.2);
+
+          .customers__item-header{
+            display: flex;
+            margin-bottom: 2rem;
+            .customers__item-image{
+              width: 4rem;
+              border-radius: 50%;
+            }
+            .customers__item-text{
+              display: flex;
+              flex-direction: column;
+              margin-left: 1rem;
+              justify-content: center;
+              .customers__item-head-text{
+                color: #030314;
+                font-family: Poppins;
+                font-size: 1.30581rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.95875rem; /* 150% */
+              }
+              .customers__item-mid-text{
+                color: #ACADB9;
+                font-family: Poppins;
+                font-size: 1.04469rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.63231rem; /* 156.25% */
+              }
+            }
+            .customers__item-quote{
+              width: 3.66813rem;
+              margin-left: auto;
+            }
+          }
+        .customers__item-content{
+          .customers__content-text{
+            width: 27.625rem;
+            color: #636363;
+            text-align: justify;
+            font-family: Poppins;
+            font-size: 1.125rem;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 1.63231rem; /* 145.094% */
+            margin-bottom: 2.44rem;
+          }
+        }
+        .customers__item-footer{
+          .customers__footer-img{
+            width: 8.625rem;
+
+
+          }
+        }
+      }
+    }
   }
 }

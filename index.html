@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style/style.css" >
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+
     <title>Title</title>
 </head>
 <body>
@@ -362,25 +371,31 @@
                 </select>
             </div>
             <div class="expanses__item-menu">
-                <div class="expanses__item">
-                    <div class="expanses__item-image">
-                        <img  src="style/components/dashboards/item-icon1.svg">
+                <div class="expanses__item-wrapper">
+                    <div class="expanses__item">
+                        <div class="expanses__item-image">
+                            <img  src="style/components/dashboards/item-icon1.svg">
+                        </div>
+                        <div class="expanses__item-content">
+                            <p class="expanses__item-content-title">Expense</p>
+                            <p class="expanses__item-content-discount">Increased By 10%</p>
+                        </div>
+                        <p class="expanses__item-price">$409.00</p>
                     </div>
-                    <div class="expanses__item-content">
-                        <p class="expanses__item-content-title">Expense</p>
-                        <p class="expanses__item-content-discount">Increased By 10%</p>
-                    </div>
-                    <p class="expanses__item-price">$409.00</p>
+                    <div class="expanses__item-line purple-line"></div>
                 </div>
-                <div class="expanses__item">
-                    <div class="expanses__item-image">
-                        <img  src="style/components/dashboards/item-icon2.svg">
+                <div class="expanses__item-wrapper">
+                    <div class="expanses__item">
+                        <div class="expanses__item-image">
+                            <img  src="style/components/dashboards/item-icon2.svg">
+                        </div>
+                        <div class="expanses__item-content">
+                            <p class="expanses__item-content-title">Vocher Usage</p>
+                            <p class="expanses__item-content-discount">Increased By 5%</p>
+                        </div>
+                        <p class="expanses__item-price">$45.78</p>
                     </div>
-                    <div class="expanses__item-content">
-                        <p class="expanses__item-content-title">Vocher Usage</p>
-                        <p class="expanses__item-content-discount">Increased By 5%</p>
-                    </div>
-                    <p class="expanses__item-price">$45.78</p>
+                    <div class="expanses__item-line orange-line"></div>
                 </div>
             </div>
 
@@ -388,7 +403,62 @@
     </div>
 </section>
 <section class="customers">
+    <div class="customers__container">
+        <p class="customers__title"><span class="purple">Customer</span> Say</p>
+        <div class="customers__slider" id="slider_desktop">
+            <div class="customers__slider-item">
+                <div class="customers__item-header">
+                    <img class="customers__item-image" src="style/components/customers/client-image1.png">
+                    <div class="customers__item-text">
+                        <p class="customers__item-head-text">Alexander R.</p>
+                        <p class="customers__item-mid-text">01 Year With Us </p>
+                    </div>
+                    <img class="customers__item-quote" src="style/components/customers/quote.svg">
+                </div>
+                <div class="customers__item-content">
+                    <p class="customers__content-text">“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time ”</p>
 
+                </div>
+                <div class="customers__item-footer">
+                    <img class="customers__footer-img" src="style/components/customers/stars.svg">
+                </div>
+            </div>
+            <div class="customers__slider-item">
+                <div class="customers__item-header">
+                    <img class="customers__item-image" src="style/components/customers/client-image1.png">
+                    <div class="customers__item-text">
+                        <p class="customers__item-head-text">Alexander R.</p>
+                        <p class="customers__item-mid-text">01 Year With Us </p>
+                    </div>
+                    <img class="customers__item-quote" src="style/components/customers/quote.svg">
+                </div>
+                <div class="customers__item-content">
+                    <p class="customers__content-text">“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time ”</p>
+
+                </div>
+                <div class="customers__item-footer">
+                    <img class="customers__footer-img" src="style/components/customers/stars.svg">
+                </div>
+            </div>
+            <div class="customers__slider-item">
+                <div class="customers__item-header">
+                    <img class="customers__item-image" src="style/components/customers/client-image1.png">
+                    <div class="customers__item-text">
+                        <p class="customers__item-head-text">Alexander R.</p>
+                        <p class="customers__item-mid-text">01 Year With Us </p>
+                    </div>
+                    <img class="customers__item-quote" src="style/components/customers/quote.svg">
+                </div>
+                <div class="customers__item-content">
+                    <p class="customers__content-text">“ Online invoice payment helps companies save time, are faster and save maximum effort for the clients and save maximum effort. Online invoice payment helps companies save time ”</p>
+
+                </div>
+                <div class="customers__item-footer">
+                    <img class="customers__footer-img" src="style/components/customers/stars.svg">
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 </body>
