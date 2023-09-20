@@ -1,22 +1,18 @@
 console.log('Hello world')
 
 $(document).ready(function() {
-    $('#slider_desktop').on('init', function(event, slick){
-        if (slick.currentSlide === 0) {
-            $('.prev-arrow').css('stroke', '#989898');
-            $('.slick-prev').css('pointer-events', 'none')
-
-        }
-    }).slick({
+    $('#slider_desktop').slick({
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         autoplay: true,
         /*   rows: 2,*/
         dots: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         arrows: true,
         prevArrow: $('.slick-prev'),
         nextArrow: $('.slick-next'),
-       /* centerMode: true,*/
+        /*centerMode: false,*/
+        variableWidth: true
+
     })
 });
