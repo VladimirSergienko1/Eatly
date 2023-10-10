@@ -906,7 +906,6 @@ a {
 }
 .customers .customers__container {
   display: flex;
-  border-bottom: 2px solid #CBCBCB;
   padding-bottom: 11rem;
   flex-direction: column;
 }
@@ -1107,15 +1106,23 @@ a {
   margin: 0 auto;
 }
 .footer .footer__container {
-  padding: 6rem 5.6rem 2.75rem 6.44rem;
+  padding: 4rem 4.6rem 2.75rem 5.44rem;
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-.footer .footer__container .footer__logo {
+.footer .footer__container .footer__row {
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid rgba(129, 129, 129, 0.25);
+  padding-bottom: 2rem;
+}
+.footer .footer__container .footer__row .footer__logo {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-.footer .footer__container .footer__logo .footer__logo-text {
+.footer .footer__container .footer__row .footer__logo .footer__logo-text {
   margin-left: 0.69rem;
   color: #6C5FBC;
   font-family: Poppins;
@@ -1124,29 +1131,43 @@ a {
   font-weight: 600;
   line-height: 130%; /* 1.72056rem */
 }
-.footer .footer__navigation {
+.footer .footer__container .footer__row .footer__navigation {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   flex: 1 auto;
 }
-.footer .footer__navigation .footer__navigation-list {
+.footer .footer__container .footer__row .footer__navigation .footer__navigation-list {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  gap: 3.34288rem;
+  gap: 4.4rem;
 }
-.footer .footer__navigation .footer__navigation-list .footer__navigation-item {
+.footer .footer__container .footer__row .footer__navigation .footer__navigation-list .footer__navigation-item {
   list-style: none;
 }
-.footer .footer__navigation .footer__navigation-list .footer__navigation-link {
-  color: #606060;
+.footer .footer__container .footer__row .footer__navigation .footer__navigation-list .footer__navigation-link {
+  color: #999;
   font-family: Inter;
   font-size: 1.11431rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 130%; /* 150% */
+  line-height: 1.67144rem; /* 150% */
   text-transform: capitalize;
   text-decoration: none;
+}
+.footer .footer__container .footer__row-second {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer__container .footer__row-second .footer__row-credits {
+  color: #999;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5625rem; /* 147.059% */
 }
 
 html {
