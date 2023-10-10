@@ -32,7 +32,7 @@ a {
   display: block;
 }
 
-.container, .customers .customers__container, .dashboards .dashboards__container, .dishes .dishes__container, .restaurants .restaurants__container, .download-app .download-app__container, .divider-section .divider-section__container, .get-started .get-started__container, .header .header__container {
+.container, .customers .customers__container .customers__banner .banner__container, .customers .customers__container, .dashboards .dashboards__container, .dishes .dishes__container, .restaurants .restaurants__container, .download-app .download-app__container, .divider-section .divider-section__container, .get-started .get-started__container, .header .header__container {
   width: 78rem;
   margin: 0 auto;
   /*  border: 1px solid red;*/
@@ -983,6 +983,78 @@ a {
 }
 .customers .customers__container .customers__slider .customers__slider-item .customers__item-footer .customers__footer-img {
   width: 8.625rem;
+}
+.customers .customers__container .customers__banner {
+  position: relative;
+  padding: 1.64rem 3.2rem 2.71rem 2.93rem;
+  background: #6C5FBC url("/style/components/customers/banner_background.png");
+  border-radius: 1.33331rem;
+}
+.customers .customers__container .customers__banner .banner__container {
+  display: flex;
+  flex-direction: column;
+}
+.customers .customers__container .customers__banner .banner__container .banner__title {
+  display: flex;
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 3.11113rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  opacity: 0.8;
+  margin-bottom: 7px;
+}
+.customers .customers__container .customers__banner .banner__container .banner__form {
+  position: relative;
+}
+.customers .customers__container .customers__banner .banner__container .banner__form .banner__input {
+  position: relative;
+  width: 19.54369rem;
+  height: 3.02225rem;
+  border-radius: 0.63263rem;
+  background: #FFF;
+  padding: 0.99rem;
+  box-shadow: 0px 5.15793px 32.23704px 0px rgba(0, 0, 0, 0.1);
+  color: #878787;
+  font-family: Poppins;
+  font-size: 11.568px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.347px;
+  text-transform: capitalize;
+  border: none;
+}
+.customers .customers__container .customers__banner .banner__container .banner__form .banner__button {
+  position: absolute;
+  width: 5.88325rem;
+  height: 2.37525rem;
+  border-radius: 8.002px;
+  background: #6C5FBC;
+  border: 1px solid #6C5FBC;
+  color: #F7F8FA;
+  top: 5px;
+  left: 214px;
+  font-family: Poppins;
+  font-size: 10.49px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.315px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.customers .customers__container .customers__banner .banner__container .banner__form .banner__button:hover {
+  color: #6C5FBC;
+  background: #F7F8FA;
+}
+.customers .customers__container .customers__banner .banner__container .banner__image {
+  position: absolute;
+  bottom: -52.6px;
+  right: 51.25px;
+  width: 12.18031rem;
 }
 
 .slick-dots {

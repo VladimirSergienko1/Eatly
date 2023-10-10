@@ -1,4 +1,7 @@
 console.log('Hello world')
+document.querySelector('.banner__button').addEventListener("click", function(event){
+    event.preventDefault()
+})
 
 $(document).ready(function() {
     $('#slider_desktop').slick({
